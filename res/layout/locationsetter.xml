@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+>
+	<LinearLayout
+		android:id="@+id/locationSetterFormItems"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:layout_height="match_parent"
+	>
+		<!-- Pretty hint text, and maxLines -->
+		<EditText
+			android:id="@+id/locationFilterForm"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="Filter through nearby locations"
+			android:inputType="text"
+			android:maxLines="1" />
+		<!-- Set height to 0, and let the weight param expand it -->
+		<!-- Note the use of the default ID! This lets us use a ListActivity still! -->
+		<ListView
+			android:id="@+id/list"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+	<com.google.android.maps.MapView
+		android:id="@+id/mapView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:enabled="true"
+		android:clickable="true"
+		android:apiKey="0HFBWmuh9eX-7IE2CfLpHljw597bmzxJg2_sBBg" />
+</LinearLayout>

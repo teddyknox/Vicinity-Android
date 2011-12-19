@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:paddingTop="40dp"
+	android:background="@drawable/splashgradient"
+>
+	<ImageView
+		android:scaleType="center"
+		android:src="@drawable/vicinitylogo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	></ImageView>
+	<EditText
+		android:id="@+id/email"
+		android:layout_width="250dp"
+		android:hint="Email"
+		android:layout_height="wrap_content"
+		android:inputType="textEmailAddress"
+	>
+		<requestFocus></requestFocus>
+	</EditText>
+	<EditText
+		android:id="@+id/password"
+		android:inputType="textPassword"
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+		android:hint="Password"
+	></EditText>
+	<Button
+		android:text="Login"
+		android:id="@+id/loginButton"
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+	></Button>
+	<Button
+		android:text="Create Account (It's that easy)"
+		android:id="@+id/createAccountButton"
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+	></Button>
+</LinearLayout>

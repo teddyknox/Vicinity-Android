@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string
+		name="app_name"
+	>Vicinity</string>
+	<string name="email">email</string>
+	<string name="password">Password</string>
+</resources>
